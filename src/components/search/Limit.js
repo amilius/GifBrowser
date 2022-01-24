@@ -25,25 +25,19 @@ function Limit() {
     return dec;
   }
 
-  return (
-    <Fragment>
-      <SpinButton
+  return <SpinButton
         style={{ width: '50px' }}
         defaultValue='4'
         label={'Limit:'}
         min={4}
         max={52}
         step={4}
-        // tslint:disable:jsx-no-lambda
         onChange={e => handleChange(e.target.value)}
         onIncrement={e => handleInc(e)}
         onDecrement={e => handleDec(e)}
-        //e => e != null ? handleChange(e.target.value) : handleChange('')
         incrementButtonAriaLabel={'Increase value by 4'}
         decrementButtonAriaLabel={'Decrease value by 4'}
-      />
-    </Fragment>
-  );
+      />;
 }
 
 export default Limit;
