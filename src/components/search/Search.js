@@ -12,18 +12,14 @@ function Search() {
     dispatch(setTextSearch(txt));
   }, 1000);
 
-  return (
-    <Fragment>
-      <SearchBox
+  return <SearchBox
         id='search'
         placeholder='Type to Search for GIFs'
         onSearch={newValue => handleChange(newValue)}
         onChange={e =>
           e != null ? handleChange(e.target.value) : handleChange('')
         }
-      />
-    </Fragment>
-  );
+      />;
 }
 
 export default Search;

@@ -23,7 +23,6 @@ function App() {
           <div className='ms-Grid-col ms-u-lg9 ms-lg9 block'>
             <Stack
               horizontal
-              //horizontalAlign='space-between'
               tokens={stackTokens}
             >
               <Stack.Item grow>

@@ -18,13 +18,13 @@ const LoadedGIFS = () => {
     const res = await axios.get(text);
     dispatch(getGifResult(res.data));
   };
-  // Ładuje gify przy zmianie url
+  // Load gifs when URL changes
   useEffect(() => {
     searchGifs(url);
     // eslint-disable-next-line
   }, [url]);
 
-  // Różne opcje wyświetlania
+  // Different display optionsk
   let textdisplay = () => {
     if (loading === true) {
       return <Loading />;
